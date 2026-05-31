@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.9.0] - 2026-05-31
+
 ### Changed
 
 - **Background agent (PostCompact hook) is now opt-in and ships inert.** It writes to the vault unattended with `--dangerously-skip-permissions`, but previously armed on `OBSIDIAN_VAULT_PATH` alone (which `setup.sh` sets for the research toolkit), so a normal install left it firing on every compaction. It now also requires a second deliberate flag, `OBSIDIAN_BG_AGENT_ENABLED=1`, which `setup.sh` never sets - so it stays inert until the user enables it, and clearing the flag is enough to disable it again. `setup.sh` now reports the hook as "registered (inert by default)" with enable instructions. (FORK_INSIGHTS.md #32)

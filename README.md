@@ -48,8 +48,8 @@
 </p>
 
 <p align="center">
-  <strong>v0.8 (May 2026):</strong> <code>/notebooklm</code> rewritten to use Google's Gemini File Search API.<br/>
-  <em>One HTTP call. No browser. Source-grounded synthesis over your own vault.</em><br/>
+  <strong>v0.9 (May 2026):</strong> <code>/research</code> and <code>/research-deep</code> now run with <strong>no API keys</strong> - free, key-less sources with Claude doing the synthesis.<br/>
+  <em>Plus Google Calendar commands, anti-hallucination guards, and the first automated tests + CI.</em><br/>
   <a href="CHANGELOG.md">See the changelog &rarr;</a>
 </p>
 
